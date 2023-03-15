@@ -80,16 +80,14 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Numero 1" />
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editText2"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Numero 2" />
+            android:inputType="textPersonName" />
     </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
