@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btn_ncalculo"
+        android:layout_width="75dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="90dp"
+        android:text="Limpiar"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="70dp" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="409dp"
@@ -48,6 +57,13 @@
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:text="RESULTADO" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
 
     </FrameLayout>
 

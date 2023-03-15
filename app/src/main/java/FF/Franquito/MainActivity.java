@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_POTENCIA;
     private Button btn_FIBONACCI;
     private Button btn_MULTIPLICACION;
+    private Button btn_limpiar;
 
     private TextView resultado1;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         edit_numero_uno =findViewById(R.id.editText1);
         edit_numero_dos = findViewById(R.id.editText2);
+        btn_limpiar = findViewById(R.id.btn_ncalculo);
 
         resultado1= findViewById(R.id.resultado);
 
@@ -37,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
                 int n2 = Integer.parseInt(edit_numero_dos.getText().toString());
                 double result = Math.pow(n1, n2);
                 resultado1.setText("Resultado: " + result);
+            }
+        });
+
+        btn_limpiar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edit_numero_dos.setText("");
+                edit_numero_uno.setText("");
+                resultado1.setText("");
             }
         });
 
