@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btn_FIBONACCI.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                resultado1.setText("Resultado: " + fibo(Integer.parseInt(edit_numero_uno.getText().toString()),Integer.parseInt(edit_numero_dos.getText().toString()))+"");
+                resultado1.setText("Resultado: " + fibo(Integer.parseInt(edit_numero_uno.getText().toString()))+"");
             }
         });
 
@@ -83,13 +83,14 @@ public class MainActivity extends AppCompatActivity {
    // }
 
 
-    public int fibo (int a, int b) {
-        for (int i = 2; i < 10; i++) {
-            int c = a + b;
-            a = b;
-            b = c;
+    public int fibo(int n) {
+        if (n <= 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        } else {
+            return fibo(n-1) + fibo(n-2);
         }
-        return b;
     }
 
     public int MULTIPLICACION (int a, int b){
