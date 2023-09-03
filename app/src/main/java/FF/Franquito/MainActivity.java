@@ -69,20 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-  //  public int pot (int a, int b){
-    //    int resultado=0;
-      //  if (a == 0)
-        //{
-          //  resultado = 1;
-        //} else
-       // {
-        //    resultado = a * pot ( a,b - 1);
-       // }
-       // return a;
-   // }
-
-
     public int fibo(int n) {
         if (n <= 0) {
             return 0;
