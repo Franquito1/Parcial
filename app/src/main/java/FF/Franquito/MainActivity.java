@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 int n1 = Integer.parseInt(edit_numero_dos.getText().toString());
                 int n2 = Integer.parseInt(edit_numero_dos.getText().toString());
                 double result = Math.pow(n1, n2);
-                resultado1.setText("Resultado: " + result);
+                resultado1.setText("Resultado:" + result);
             }
         });
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btn_FIBONACCI.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                resultado1.setText("Resultado: " + fibo(Integer.parseInt(edit_numero_uno.getText().toString()))+"");
+                resultado1.setText("Resultado:" + fibo(Integer.parseInt(edit_numero_uno.getText().toString()))+"");
             }
         });
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         btn_MULTIPLICACION.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                resultado1.setText("Resultado: " +MULTIPLICACION(Integer.parseInt(edit_numero_uno.getText().toString()),Integer.parseInt(edit_numero_dos.getText().toString()))+"");
+                resultado1.setText("Resultado:" +MULTIPLICACION(Integer.parseInt(edit_numero_uno.getText().toString()),Integer.parseInt(edit_numero_dos.getText().toString()))+"");
             }
         });
 
