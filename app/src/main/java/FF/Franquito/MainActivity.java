@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btn_FIBONACCI.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                resultado1.setText("Resultado: " + fibo(Integer.parseInt(edit_numero_uno.getText().toString()))+"");
+                resultado1.setText("Resultado:" + fibo(Integer.parseInt(edit_numero_uno.getText().toString()))+"");
             }
         });
 
