@@ -21,9 +21,5 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        
-    - name: Set permissions for build.xml
-      run: chmod +x src/build.xml
-
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
